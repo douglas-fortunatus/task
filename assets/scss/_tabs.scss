@@ -1,0 +1,31 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+
+    &.active {
+        color: $white;
+        border-bottom: 3px solid $cream;
+    }
+
+    &-content{
+        margin: 0 10px;
+    }
+}

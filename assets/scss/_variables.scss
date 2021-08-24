@@ -1,0 +1,35 @@
+$white : #FFFFFF;
+$cream : #F9B17A;
+$primary-color : #2D3250;
+$secondary-color : #424769;
+$light-purple : #676F9D;
+$light-black : #101010;
+
+$spacer: 1rem;
+
+// $spacers: (
+//     0: 0,
+//     1: $spacer * .25,
+//     2: $spacer * .5,
+//     3: $spacer,
+//     4: $spacer * 1.5,
+//     5: $spacer * 3,
+// );
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

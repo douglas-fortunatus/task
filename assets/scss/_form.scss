@@ -1,0 +1,138 @@
+/* === form === */
+
+.forget-pass{
+
+    a{
+        color: $primary-color;
+    }
+}
+
+.show-password{
+    border: none;
+    color: $secondary-color;
+    background-color: transparent;
+}
+
+input[type='email'], 
+input[type='text'], 
+input[type='password']{
+    color: $white;
+    border: none;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 2;
+    border: none;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+
+    &:focus{
+        background-color: transparent;
+        border-radius: none;
+        -webkit-border-radius: none;
+        -moz-border-radius: none;
+        -ms-border-radius: none;
+        -o-border-radius: none;
+    }
+    
+    &::placeholder{
+        color: $white;
+    }
+}
+
+.input-active{
+    border-left: 3px solid $cream;
+}
+
+.form{
+
+    h1, p{
+        margin: 0;
+        padding: 0;
+    }
+
+    &-container{
+        width: 70%;
+        height: auto;
+        margin: 90px auto;
+        border: none;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.404) 0px 54px 55px;
+        background-color: $secondary-color;
+    }
+
+    &-row{
+        display: flex;
+    }
+
+    &-left{
+        width: 700px;
+        padding: 20px 70px;
+        margin: 0;
+        background-color: transparent;
+    }
+    
+    &-content{
+        padding: 3.625rem 0px;
+    }
+
+}
+
+.input{
+
+    &-group{
+        display: flex;
+        flex: 0 0 auto;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 7px;
+        background-color: $light-purple;
+        padding: 10px;
+
+        & label{
+            width: 100%;
+            font-size: 1rem;
+            color: $secondary-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.login{
+
+    &-option{
+        padding: 20px 0;
+        @include flexCenter;
+    }
+    
+    &-links{
+        margin-left: 20px;
+    
+        a{
+            color: $white;
+            padding: 0 10px;
+        }
+    }
+}
+
+/* === left image == */
+.image-left{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 1028px) {
+        display: none;
+    }
+} 
